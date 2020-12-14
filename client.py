@@ -9,8 +9,8 @@ import socket
 port = 12345
 tosend = 'check.py'
 torec = 'cli_file_recv.xz'
-host = ""
-print(host)
+host = socket.gethostname()	#Change to sever IP Address if different systems on same network
+
 
 #Creating a socket and connecting to server
 s = socket.socket()
